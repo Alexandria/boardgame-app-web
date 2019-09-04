@@ -1,7 +1,6 @@
 import axios from "axios"
-import { PORT, HOST } from "./index"
 
-console.log("myApi:", HOST, PORT)
+import { HOST, PORT } from "./index"
 
 export default axios.create({
   baseURL: `${HOST}:${PORT}`,
