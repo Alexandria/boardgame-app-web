@@ -11,9 +11,7 @@ import { ErrorMessage, FormikProps, withFormik, FormikValues } from "formik"
 import * as yup from "yup"
 import { setAuthorization } from "../../utils/setAuthorization"
 import { withRouter, RouteComponentProps } from "react-router-dom"
-
 import { PORT } from "../../api/index"
-
 import myAPI from "../../api/myAPI"
 
 const styles = createStyles({
@@ -69,6 +67,8 @@ const FormComp = (props: FormikProps<FormValues>) => {
       onClose={handleClose}
       aria-labelledby="form-dialog-title"
       style={styles.dialogBox}
+      disableBackdropClick
+      disableEscapeKeyDown
       fullWidth
       maxWidth="md"
     >
