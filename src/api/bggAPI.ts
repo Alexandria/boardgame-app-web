@@ -1,5 +1,7 @@
 import axios from "axios"
-import { HOST, CORS_ANYWHERE } from "./index"
+
+import { CORS_ANYWHERE, HOST } from "./index"
+
 export default axios.create({
   baseURL: `${HOST}:${CORS_ANYWHERE}/https://www.boardgamegeek.com/xmlapi2`,
 })
